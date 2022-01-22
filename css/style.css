@@ -455,15 +455,119 @@ nav a:hover {
 /* FormPage */
 
 #form_page {
-  width: 90%;
+  width: 65%;
   display: grid;
-  grid-template-columns: 40% 30%;
-  margin: auto;
-  column-gap: 2%;
+  grid-template-columns: 43% 42%;
+  margin: 5% auto auto auto;
+  column-gap: 10%;
+  /* background-color: rgb(122, 122, 102); */
+
 }
 
-#input_form {
+.flex {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
+}
+
+.flex input{
+  font-size: 1.2rem;
+  margin: 2% 0;
+  border: 1px solid gray ;
+  padding: 1%;
+}
+
+.flex button {
+  border-radius: 13px;
+  /* outline: none; */
+  border: none;
+  background-color: rgb(138, 175, 243)  ;
+  padding: 2%;
+  margin: 4% 0;
+  color: white;
+}
+
+#check {
+  font-size: 0.9rem;
+  color: gray;
+}
+
+.bold {
+  color: rgb(58, 58, 58);
+
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+#test_img img{
+  width: 100%;
+  height: 100%;
+}
+
+#form_page h2{
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(58, 58, 58);
+}
+
+#heading_1 {
+  font-size: 1.8rem;
+}
+
+#heading_2 {
+  text-align: center;
+}
+
+#form_page li, #form_page p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  list-style: none;
+  color: gray;
+}
+
+#form_page p {
+  padding: 3% 0;
+}
+
+#form_page li:before {
+  content: "✓";
+  color:#29B6F6;
+  font-weight: bold;
+}
+
+.flex p{
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 3% 0;
+}
+
+#last_one {
+  font-weight: bold; 
+  margin: 4% 0;
+  color: rgb(75, 74, 74);
+
+}
+
+@media screen and (max-width:900px) {
+  #form_page {
+    width: 90%;
+    margin: auto;
+    grid-template-rows: auto;
+  }
+}
+
+@media screen and (max-width:600px) {
+  #form_page {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 75%;
+    margin:10% 12%;
+    /* background-color: red; */
+  }
+
+  #test_img {
+    margin:10% 0;
+  }
 }
