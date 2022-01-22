@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body{
+  background-color: rgb(245, 248, 248);
+}
+
 .home {
   background: url(../images/img3.jfif);
   width: 100%;
@@ -115,12 +119,6 @@ nav a:hover {
 }
 
 @media screen and (max-width: 1010px) {
-  /* nav{
-        display: grid;
-        grid-template-columns: 100%;
-        padding: 0;
-        margin: 0;
-    } */
 
   nav {
     grid-template-columns: 100%;
@@ -346,4 +344,126 @@ nav a:hover {
     font-size: 1.3rem;
   }
 
+}
+
+/* software maintenance plan */
+
+#heading{
+  width: 38%;
+  margin: auto;
+  text-align: center;
+}
+
+#heading h1{
+  margin: 0;
+  text-align: center;
+}
+
+#grid{
+  width: 70%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  /* background-color: blue; */
+  text-align: center;
+  column-gap: 3%;
+  
+}
+
+#grid fieldset{
+  border: 1px solid rgb(161, 157, 157);
+  border-radius: 10px;
+  padding: 2%;
+  box-shadow: 5px 5px 10px rgb(88, 88, 88);
+}
+
+#grid fieldset h2{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(58, 58, 58);
+}
+
+.right:before {
+  content: "✓";
+  color:#29B6F6;
+  font-weight: bold;
+}
+
+.cross::before {
+  content: "\00d7";
+  color: #424242;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+#grid fieldset li{
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: gray;
+}
+
+#maintain p{
+  color: gray;
+  padding: 2% 0 7% 0;
+  border-width:10%;
+  /* width: 30%; */
+}
+
+.sentence{
+  border-bottom: 1px solid gray;
+}
+
+
+#grid ul{
+  list-style: none;
+}
+
+.sup{
+  color: #29B6F6;
+  font-size: 1.2rem;
+}
+
+.int{
+  color: #29B6F6;
+  font-weight: bolder;
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width:900px) {
+  #heading {
+    width: 70%;
+  }
+
+  #grid {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width:650px) {
+  #heading {
+    width: 90%;
+  }
+  
+  #grid fieldset {
+    margin: 3% 0;
+  }
+}
+
+
+/* FormPage */
+
+#form_page {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 40% 30%;
+  margin: auto;
+  column-gap: 2%;
+}
+
+#input_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
