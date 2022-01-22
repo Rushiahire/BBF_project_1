@@ -373,7 +373,7 @@ nav a:hover {
 #grid fieldset{
   border: 1px solid rgb(161, 157, 157);
   border-radius: 10px;
-  padding: 2%;
+  padding: 10% 2%;
   box-shadow: 5px 5px 10px rgb(88, 88, 88);
 }
 
@@ -395,9 +395,26 @@ nav a:hover {
   font-weight: bold;
 }
 
+#grid button {
+  cursor: pointer;
+  display: block;
+  /* position:absolute; */
+  margin-top: -10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #7dd0f7;
+  /* color: white; */
+  border:none;
+  border-radius: 7px;
+  padding: 2%;
+  width: 40%;
+  
+}
+
 #grid fieldset li{
   font-family: Georgia, "Times New Roman", Times, serif;
   color: gray;
+  margin: 0.8rem auto;
 }
 
 #maintain p{
@@ -409,11 +426,14 @@ nav a:hover {
 
 .sentence{
   border-bottom: 1px solid gray;
+  width: 75%;
+  margin: auto;
 }
 
 
 #grid ul{
   list-style: none;
+  margin-top: 3%;
 }
 
 .sup{
@@ -425,6 +445,7 @@ nav a:hover {
   color: #29B6F6;
   font-weight: bolder;
   font-size: 2.5rem;
+
 }
 
 @media screen and (max-width:900px) {
@@ -439,6 +460,14 @@ nav a:hover {
     justify-content: center;
     flex-wrap: wrap;
   }
+
+  #grid div {
+    margin: 1rem auto;
+  }
+
+  #grid button {
+    margin-top: -17px;
+  }
 }
 
 @media screen and (max-width:650px) {
@@ -448,6 +477,10 @@ nav a:hover {
   
   #grid fieldset {
     margin: 3% 0;
+  }
+
+  #grid button {
+    margin-top: -25px;
   }
 }
 
@@ -487,6 +520,7 @@ nav a:hover {
   padding: 2%;
   margin: 4% 0;
   color: white;
+  cursor: pointer;
 }
 
 #check {
