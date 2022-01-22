@@ -135,7 +135,7 @@ nav a:hover {
   #hamburger {
     display: block;
     color: black;
-    margin-left: 70%;
+    /* margin-left: 70%; */
     cursor: pointer;
   }
 
@@ -560,10 +560,10 @@ nav a:hover {
 
 @media screen and (max-width:600px) {
   #form_page {
-    width: 100%;
+    width: 80%;
     display: grid;
-    grid-template-columns: 75%;
-    margin:10% 12%;
+    grid-template-columns: auto;
+    margin:10% auto;
     /* background-color: red; */
   }
 
