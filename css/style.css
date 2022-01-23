@@ -716,8 +716,10 @@ footer {
   display: grid;
   grid-template-columns: 30% 38% 30%;
   margin: 3% auto;
+  padding: 5% 0;
   /* background-color: lightskyblue; */
   border-bottom: 2px solid gray;
+  text-align: center;
 }
 
 footer i {
@@ -733,9 +735,9 @@ footer p {
   color: gray;
 }
 
-#p2 {
+/* #p2 {
   margin-bottom: 10%;
-}
+} */
 
 footer a {
   color: rgb(112, 211, 201);
@@ -747,28 +749,12 @@ footer h2 {
   color: rgb(58, 58, 58);
   margin: 3% 0;
 }
-
-#end {
-  color: gray;
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  /* margin: 2% 30%; */
-  margin: auto;
-  padding: 5% 0;
-}
-
-#end a {
-  color: gray;
-}
-
+/* 
 @media screen and (max-width:1050px) {
   footer {
     width: 70%;
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
-    /* margin: auto; */
     margin-bottom: 5%;
   }
 
@@ -776,5 +762,64 @@ footer h2 {
     margin-bottom: 6%;
   }
 
+}  */
 
-} 
+#end {
+  width: 40%;
+  /* background-color: blueviolet; */
+  margin: 2% auto;
+  /* padding-bottom: 10%; */
+  /* border-bottom: 4px solid gray; */
+  color: gray;
+}
+
+#arrow{
+  cursor: pointer;
+  background-color: rgb(128, 235, 235);
+  border-radius: 8rem;
+  font-size: 1.7rem;
+  padding: 0.5% 0.7% ;
+  margin-left: 93%;
+}
+
+hr {
+  margin: 2% auto 5% auto;
+  border: 2px solid gray;
+}
+
+#end a {
+  color: gray;
+}
+
+@media screen and (max-width:850px) {
+  #end {
+    width: 60%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:750px) {
+  footer {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #end {
+    width: 67%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:550px) {
+  #arrow {
+    margin-left: 90%;
+    /* padding: 1%; */
+  }
+}
+
+@media screen and (max-width:400px) {
+  #arrow {
+    margin-left: 85%;
+  }
+}
