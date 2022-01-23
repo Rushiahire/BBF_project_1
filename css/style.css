@@ -23,7 +23,7 @@ nav {
   grid-template-columns: repeat(2, auto);
   align-items: center;
   padding: 1% 5%;
-  background-color: rgb(248, 245, 219);
+  background-color: rgba(232, 239, 252, 0.959);
   position: fixed;
   /* background: transparent; */
 }
